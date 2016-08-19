@@ -1,0 +1,31 @@
+@import '../../../styles/config.less';
+
+.button-base {
+  display: inline-block;
+  padding: @basePadding @basePaddingXL;
+  margin-bottom: 0;
+  // font-size: 14px;
+  // font-weight: 400;
+  // line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  background-color: @yellow;
+  border: none;
+  color: @black;
+  font-size: @baseFont;
+  font-family: 'QuickSand', sans-serif;
+  transition: all .2s ease-in;
+}
+
+.button-base:hover {
+  background-color: @gold;
+}

@@ -1,0 +1,85 @@
+@base: 16;
+
+@baseFont: unit(@base, px);
+
+@baseFontBold: unit(@base - 1, px);
+
+body {
+  font-size: @baseFont;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: 'QuickSand', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: unit(@base * 2.625, px);
+  line-height: 55px;
+}
+
+//Tablettes
+  @media only screen and (min-width: 48em) {
+    .logo-typo {
+      font-size: 20px!important;
+    }
+  }
+
+//Smartphones
+@media only screen and (max-width: 48em){
+   h1 {
+  line-height: 40px;
+}
+}
+
+h2 {
+  font-size: unit(@base * 2, px);
+}
+
+h3 {
+  font-size: unit(@base * 1.750, px);
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: unit(@base * 1.250, px);
+  text-transform: uppercase;
+}
+
+p{
+  line-height: 19px;
+}
+
+a {
+  color: @lightBlue;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid @lightBlue;
+}
+
+a:hover {
+  color: @mediumBlue;
+  border-color: @mediumBlue;
+}
+
+a.no-underline,  a.no-underline:hover {
+  border: none;
+}
+
+
+@media only screen and (max-width: 48em) {
+  h1 {
+    font-size: unit(@base * 1.875, px);
+  }
+
+  h2 {
+    font-size: unit(@base * 1.750, px);
+  }
+
+  h3 {
+    font-size: unit(@base * 1.500, px);
+  }
+}
+
