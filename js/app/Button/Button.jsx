@@ -3,7 +3,7 @@ import './Button.less';
 import {Row, Item, Column} from 'react-plan';
 
 type Props = {
-  state: string
+  state: ?string
 }
 
 const baseClass = 'button-base';
