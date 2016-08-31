@@ -33,3 +33,8 @@
 .button-base:hover {
   background-color: @gold;
 }
+
+.button-base:disabled {
+  background-color: lighten(@gold, 10%);
+  cursor: not-allowed;
+}

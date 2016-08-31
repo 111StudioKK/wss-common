@@ -42,11 +42,11 @@ class Button extends React.Component {
     switch (this.props.state) {
       case 'SAVING':
         disabled = true;
-        children = <span><i span data-icon="z" className="icon"></i> { strings.saving }</span>;
+        children = <span><i span data-icon="z" className="icon"></i> { this.props.saving || strings.saving }</span>;
         break;
       case 'SUCCESS':
         disabled = true;
-        children = <span><i className="icon-check"></i> { strings.success }</span>;
+        children = <span><i className="icon-check"></i> { this.props.success || strings.success }</span>;
         break;
       default:
         children = this.props.children;
